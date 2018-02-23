@@ -1,0 +1,43 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #e84610;
+    transform: rotate(9deg) translate(100px, 100px) skew(5deg);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.box:hover {
+    transform: scale(2) rotate(9deg) translate(100px, 100px) skew(5deg);
+}
+
+img {
+    margin-top: 150px;
+    margin-left: 50px;
+    animation-name: perpetualrotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes perpetualrotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #9056b3;
+}
+
+.element:hover {
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 1s;
+}
